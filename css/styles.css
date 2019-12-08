@@ -1,13 +1,12 @@
 html{
-font-size: 62.5%; /**   RESET  para REMS .-- 62.5% = 10px de 16px   **//
-
+font-size: 62.5%; /**   RESET  para REMS .-- 62.5% = 10px de 16px   **/
 }
-
 
 /** Fuentes  **/
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    line-height: 2rem;   
 }
 
 /** Globales **/
@@ -26,6 +25,19 @@ h3{
 }
 h4{
     font-size: 2.6rem;
+}
+
+
+/** Utilidades **/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
 }
 
 
@@ -72,8 +84,21 @@ h4{
 }
 
 
+/**  Iconos nosotros**/
+.encabezado-nosotros{
+    font-weight: 300;
+    text-align: center;
+}
 
-
-
-
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+.icono{
+   flex-basis: calc(33.3% - 1rem);/**  Iconos nosotros - Manera para mostrar contenido en columnas**/
+   text-align: center;
+}
+.icono h3{
+    text-transform: uppercase;
+}
 
