@@ -220,13 +220,73 @@ flex-basis: calc(33.3% - 1rem);
        margin-bottom: 0;
 }
 .entrada-blog .imagen{
-    flex-direction: 40%;
+    flex-basis: 40%;
 }
 
 .entrada-blog .texto-entrada{
     flex-basis:calc(60% - 3rem);
 }
+.texto-entrada a{
+    color: #000000;
+    text-decoration: none;
+}
 .texto-entrada h4{
     margin: 0;
     line-height: 1.4;
+}
+
+.texto-entrada h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: green;
+}
+.texto-entrada span{
+    color: #E08709;
+}
+
+/** Testimoniales **/
+
+.testimonial{
+    background-color: #71B100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+
+.testimonial p{
+    text-align: right;
+}
+
+.testimonial blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote{
+    position: relative;
+    padding-left: 7rem;
+    font-weight: 300;
+}
+
+/** Footer**/
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    margin:0;
+    color: #ffffff;
 }
