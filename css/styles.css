@@ -20,7 +20,8 @@ img{
    /** width: 2400px; /**   agrandar imagenes a mas tamaño pantallas +"", **/
 }
 
-.maximo{
+/** Imagen ocupe todo el ancho de pantall**/
+.maximo-ancho{
     width: 2400px;
 }
 
@@ -339,4 +340,11 @@ h4{
     display: flex;
     justify-content:space-between;
     align-items: center;
+}
+
+
+
+/** label**/
+label{
+    display: block;
 }
