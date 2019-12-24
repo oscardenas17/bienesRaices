@@ -34,13 +34,13 @@
 <main class="contenedor seccion contenido-centrado">
     <h2 class="fw-300 centrar-texto">Ingresa tus datos de contacto</h2>
 
-    <form action="  ">
+    <form class="contacto"  action="  ">
 
         <fieldset>  
             <legend>Información Personal</legend>      
 
             <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre" placeholder="Tu nombre" >
+            <input class="nombre" type="text" id="nombre" placeholder="Tu nombre" >
 
             
             <label for="email">E-mail: </label>
@@ -56,7 +56,7 @@
         </fieldset>
 
         <fieldset>
-            <legend>Información sobre Inmueble</legend>
+            <legend>Información sobre el Inmueble</legend>
 
             <label for="opciones">Vende o Compra</label>
 
@@ -75,16 +75,17 @@
         <fieldset>
             <legend>Contacto</legend>
 
-            <p>Como desea ser Contactado</p>
+            <p>Como deseas ser Contactado.</p>
          
-
+        <div class="forma-contacto">
             <label for="telContacto">Teléfono</label>
             <input type="radio" id="telContacto"name="contacto" id="telContact" value="telefono">
 
             <label for="mailContacto">Correo</label>
             <input type="radio" id=" mailContacto" name="contacto" id=" emailContact" value="correo">
+        </div>
 
-            <p>Si seleccionaste Teléfono, dinos la fecha y la hora</p>
+            <p>Si seleccionaste Teléfono, dinos la fecha y la hora para comunicarnos.</p>
             <label for="fecha">Fecha: </label>
             <input type="date" id="fecha">
 
